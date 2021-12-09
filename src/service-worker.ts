@@ -9,9 +9,10 @@ import {
 
 const worker = (self as unknown) as ServiceWorkerGlobalScope;
 const FILES = `cache${timestamp}`;
-const to_cache = build.concat(files, ['/', '/share']);
-const staticAssets = new Set(to_cache);
+
+const staticAssets = new Set(build.concat(files, ['/', '/share']));
 staticAssets.delete('/staticwebapp.config.json');
+const to_cache = [...staticAssets];
 // listen for the install events
 worker.addEventListener('install', (event) =>
 {
