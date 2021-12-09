@@ -11,6 +11,7 @@ const worker = (self as unknown) as ServiceWorkerGlobalScope;
 const FILES = `cache${timestamp}`;
 const to_cache = build.concat(files, ['/', '/share']);
 const staticAssets = new Set(to_cache);
+staticAssets.delete('/staticwebapp.config.json');
 // listen for the install events
 worker.addEventListener('install', (event) =>
 {
