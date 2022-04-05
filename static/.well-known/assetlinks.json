@@ -1,10 +1,6 @@
 [{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "net.azurestaticapps.salmon_coast_050e38110.twa",
-    "sha256_cert_fingerprints": [
-      "3F:0A:31:4C:8C:BF:9C:66:E5:A9:A1:3B:BA:3F:DB:ED:48:E6:C0:85:69:50:FB:13:A7:A7:E5:59:FA:7F:A3:70"
-    ]
-  }
-}]
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target" : { "namespace": "android_app", "package_name": "net.azurestaticapps.salmon_coast_050e38110.twa",
+                     "sha256_cert_fingerprints": ["71:A3:5D:2C:7B:D7:AC:E3:43:9F:E0:44:55:1B:84:E5:90:CD:5D:82:D3:A0:FA:E7:63:9D:01:37:3C:B5:B5:90"] }
+      }
+]
